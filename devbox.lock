@@ -5,6 +5,134 @@
       "last_modified": "2025-09-02T13:16:47Z",
       "resolved": "github:NixOS/nixpkgs/aaff8c16d7fc04991cac6245bee1baa31f72b1e1?lastModified=1756819007&narHash=sha256-12V64nKG%2FO%2FguxSYnr5%2Fnq1EfqwJCdD2%2BcIGmhz3nrE%3D"
     },
+    "texlivePackages.lipsum@latest": {
+      "last_modified": "2025-07-28T17:09:23Z",
+      "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#texlivePackages.lipsum",
+      "source": "devbox-search",
+      "version": "2.7",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "tex",
+              "path": "/nix/store/39rpm43jma0k9j4gdwg45vcdfpn4c4ww-lipsum-2.7-tex",
+              "default": true
+            },
+            {
+              "name": "texdoc",
+              "path": "/nix/store/63ahls4ycfav8grjdzp1dc9n5h4avv63-lipsum-2.7-texdoc"
+            }
+          ],
+          "store_path": "/nix/store/39rpm43jma0k9j4gdwg45vcdfpn4c4ww-lipsum-2.7-tex"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "tex",
+              "path": "/nix/store/aail5m2gc8rkv6lpqijkb7bgxzf2qwm3-lipsum-2.7-tex",
+              "default": true
+            },
+            {
+              "name": "texdoc",
+              "path": "/nix/store/9z7ji5c8ydfglq7l5smdb3mrac06cxis-lipsum-2.7-texdoc"
+            }
+          ],
+          "store_path": "/nix/store/aail5m2gc8rkv6lpqijkb7bgxzf2qwm3-lipsum-2.7-tex"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "tex",
+              "path": "/nix/store/qsbg7wnpn58n05hs1i3z90ddyk457x9m-lipsum-2.7-tex",
+              "default": true
+            },
+            {
+              "name": "texdoc",
+              "path": "/nix/store/qi4jlkjbqzzfn2yj946krhjbpw3vsqgy-lipsum-2.7-texdoc"
+            }
+          ],
+          "store_path": "/nix/store/qsbg7wnpn58n05hs1i3z90ddyk457x9m-lipsum-2.7-tex"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "tex",
+              "path": "/nix/store/wxrpd234zvqns8213m79yfa3hslv033x-lipsum-2.7-tex",
+              "default": true
+            },
+            {
+              "name": "texdoc",
+              "path": "/nix/store/xh5mnlhb7zr9kcx0li8vvkfdxndd3nmq-lipsum-2.7-texdoc"
+            }
+          ],
+          "store_path": "/nix/store/wxrpd234zvqns8213m79yfa3hslv033x-lipsum-2.7-tex"
+        }
+      }
+    },
+    "texlivePackages.todonotes@latest": {
+      "last_modified": "2025-07-28T17:09:23Z",
+      "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#texlivePackages.todonotes",
+      "source": "devbox-search",
+      "version": "1.1.7",
+      "systems": {
+        "aarch64-darwin": {
+          "outputs": [
+            {
+              "name": "tex",
+              "path": "/nix/store/yhsvcjijvkilca3r2ambs3g512j8pl1v-todonotes-1.1.7-tex",
+              "default": true
+            },
+            {
+              "name": "texdoc",
+              "path": "/nix/store/2lflqp1ss4b28dgy7nd2d2gvd2cadypp-todonotes-1.1.7-texdoc"
+            }
+          ],
+          "store_path": "/nix/store/yhsvcjijvkilca3r2ambs3g512j8pl1v-todonotes-1.1.7-tex"
+        },
+        "aarch64-linux": {
+          "outputs": [
+            {
+              "name": "tex",
+              "path": "/nix/store/xgbagsg4h4m1pmqjlgxnlhf6xwc7gnb4-todonotes-1.1.7-tex",
+              "default": true
+            },
+            {
+              "name": "texdoc",
+              "path": "/nix/store/hygkll2xsay2fclvc8lb24hsnzhmqxxq-todonotes-1.1.7-texdoc"
+            }
+          ],
+          "store_path": "/nix/store/xgbagsg4h4m1pmqjlgxnlhf6xwc7gnb4-todonotes-1.1.7-tex"
+        },
+        "x86_64-darwin": {
+          "outputs": [
+            {
+              "name": "tex",
+              "path": "/nix/store/1hhnm2zwf4rncn2mcwbjdjlk2l8n4m84-todonotes-1.1.7-tex",
+              "default": true
+            },
+            {
+              "name": "texdoc",
+              "path": "/nix/store/af0a8z84p28c92fawsr7dkyybdc4scgg-todonotes-1.1.7-texdoc"
+            }
+          ],
+          "store_path": "/nix/store/1hhnm2zwf4rncn2mcwbjdjlk2l8n4m84-todonotes-1.1.7-tex"
+        },
+        "x86_64-linux": {
+          "outputs": [
+            {
+              "name": "tex",
+              "path": "/nix/store/4bap8glg5jgzpragjfabblqiickdp5bp-todonotes-1.1.7-tex",
+              "default": true
+            },
+            {
+              "name": "texdoc",
+              "path": "/nix/store/znfvh8npslj6v44zykh9vpx1wqril1ry-todonotes-1.1.7-texdoc"
+            }
+          ],
+          "store_path": "/nix/store/4bap8glg5jgzpragjfabblqiickdp5bp-todonotes-1.1.7-tex"
+        }
+      }
+    },
     "texliveTeTeX@latest": {
       "last_modified": "2025-07-28T17:09:23Z",
       "resolved": "github:NixOS/nixpkgs/648f70160c03151bc2121d179291337ad6bc564b#texliveTeTeX",
