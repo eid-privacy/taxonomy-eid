@@ -23,21 +23,21 @@ This section lists \emph{existing} cryptographic building blocks, schemes, and p
 \subsubsection{Primitives} 
 
 Cryptographic primitives form the foundational mathematical operations upon which all higher-level security protocols are built.
-They providing the basic computational building blocks for secure communication and data protection.
+They provide the basic computational building blocks for secure communication and data protection.
 
 \paragraph{Hashes} are used to create a digital fingerprint, the \emph{hash value}, of a source, the \emph{message}.
 The size of the hash value is always the same, regardless of the size of the message.
 A \emph{cryptographic hash function} needs to have the following properties:
-the output must be \emph{equiprobable} for any input, finding the input of a random output is only possible through enumeration, \emph{pre-image resistance}, given an input/output pair, only enumeration can give a second input with the same output, \emph{second pre-image resistance}, randomly finding two inputs with the same output is only possible with enumeration, \emph{collision resistance}.
+the output must be \emph{equiprobable} for any input; finding the input of a random output is only possible through enumeration (\emph{pre-image resistance}); given an input/output pair, only enumeration can give a second input with the same output (\emph{second pre-image resistance}); randomly finding two inputs with the same output is only possible with enumeration (\emph{collision resistance}).
 The most popular hash functions are SHA-256 \cite{FIPS180-4} and SHA-3 \cite{FIPS202}.
 We also want to mention Poseidon \cite{GKRRS21}, a purpose-specific hash function designed to be cost-effective when used in zk-SNARKS constructions.
 
 \paragraph{Public-Key Cryptography} 
 \label{sp:public-key-cryptography}
 (or asymmetric) cryptography relies on a pair of keys, one \emph{public}, the other \emph{private}, and a one-way function. 
-One-way functions are easy to compute in one direction, and hard in the other. 
+One-way functions are easy to compute in one direction but hard in the other. 
 This allows a party to encrypt a message using the other party's public key. 
-Message that can then only be decrypted by someone in possession of the corresponding private key.
+Messages that can then only be decrypted by someone in possession of the corresponding private key.
 
 \paragraph{Symmetric Cryptography} relies on parties agreeing on a common secret to protect information. This secret is used for both encrypting and decrypting messages. Symmetric systems are computationally very efficient and cryptographic systems usually rely on a combination of asymmetric and symmetric cryptographic primitives.
 

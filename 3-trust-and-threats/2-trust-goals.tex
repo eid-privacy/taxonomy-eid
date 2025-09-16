@@ -23,7 +23,7 @@
 }
 
 We map each \emph{Actor} type to distinct \emph{Trust Goals}. \emph{Private Individuals} seek \emph{User Agency}, \emph{Businesses} seek workflow optimizations and improvement, and \emph{Governments} aim to ensure only legitimate institutions can issue identities for specific purposes.
-Note that some goals exist prior to any digital identity systems, some are specific to them. Some goals go beyond the identity emission/presentation interactions and cannot be addressed by digital credential technologies. 
+Note that some goals exist prior to any digital identity systems, while some are specific to them. Some goals go beyond the identity emission/presentation interactions and cannot be addressed by digital credential technologies. 
 They exist nonetheless and should be taken into account when designing the credential layer. We give a more detailed breakdown of these categories.
 
 
@@ -36,7 +36,7 @@ In order for the users to trust this new technology, they need to have \emph{Use
 \paragraph{Anonymity} regroups the characteristics of an identity system that enables safe and well-bounded usage of a person's identity. The category is composed of characteristics that limit the risk of an individual's overexposure when using their identity. We favor the term \emph{Anonymity} over \emph{Data Minimization} to retain a focus on individuals rather than on data. We use the definition from \cite{ph10}: "Anonymity of a subject means that the subject is not identifiable within a set of
 subjects, the anonymity set."
 
-\subparagraph{Unlinkability} - we use the definition from \cite{ph10}: ''Unlinkability of two or more \emph{Items of Interest} (IOIs, e.g., subjects, messages, actions, ...)
+\subparagraph{Unlinkability} -- we use the definition from \cite{ph10}: ''Unlinkability of two or more \emph{Items of Interest} (IOIs, e.g., subjects, messages, actions, ...)
 from an attacker’s perspective means that within the system (comprising these and
 possibly other items), the attacker cannot sufficiently distinguish whether these IOIs are
 related or not.''
@@ -56,8 +56,8 @@ The popular term \emph{Self-Sovereign identity} is one instance of a user-centri
 We also use \emph{User-centric identity} to assess the level of power and technical decentralization of the systems. 
 It should not come at the cost of a loss of control over the identity (identity theft).
 
-\subparagraph{Offline Usage} captures to which extent an \eid can be used even without network connectivity.
-We define \emph{offline} as a settings in which parties cannot rely on connectivity to a central server or the global internet, because it is either inexistent or intermittent. We do not consider cases where a device is "never online", whether intentionally or not. Using an \eid in these settings usually means employing peer-to-peer transport such as Bluetooth, or scanning QRCodes. It also usually requires pre-loading of the \eid and of a certain number of trust elements such as issuers' keys, trust registries, revocation lists, etc.
+\subparagraph{Offline Usage} captures the extent to which an \eid{} can be used even without network connectivity.
+We define \emph{offline} as a setting in which parties cannot rely on connectivity to a central server or the global internet, because it is either nonexistent or intermittent. We do not consider cases where a device is "never online", whether intentionally or not. Using an \eid{} in these settings usually means employing peer-to-peer transport such as Bluetooth, or scanning QR codes. It also usually requires pre-loading of the \eid and of a certain number of trust elements such as issuers' keys, trust registries, revocation lists, etc.
 
 \subsubsection{Business Interests} 
 
@@ -74,10 +74,10 @@ This requires identity systems to be able to operate on various modes of privacy
 
 The constitution and applicable laws describe the goals of a government for an \eid system.
 
-\paragraph{Unforgeability} is a basic requirement, not only for \eid, is that it must be (computationally) infeasible to make claims in the name of another party in a way that is indistinguishable from claims made by that party. This is closely related to \emph{Fraud prevention}.
+\paragraph{Unforgeability} is a basic requirement, not only for \eid{}, that it must be (computationally) infeasible to make claims in the name of another party in a way that is indistinguishable from claims made by that party. This is closely related to \emph{Fraud prevention}.
 
-\paragraph{Non-transferability (holder binding)} make it hard for malicious actors to forge an identity.
+\paragraph{Non-transferability (holder binding)} makes it hard for malicious actors to forge an identity.
 The authenticity of shared data might be guaranteed, but the lawful possession of the data by the presenting party is not. The issuers, in our case, the governments, want to ensure that authentic identity data can only be used by authorized people: An \eid should only be usable by the person it represents or a legal guardian. The closest approximation to ensure a particular \eid can only be presented successfully by the authorized person is making sure that an \eid can only be presented from the device it was issued to. This mechanism is usually called \emph{holder binding}.
 
-\paragraph{Government oversight / transparency} is sometimes desirable, or even required.
+\paragraph{Government oversight/transparency} is sometimes desirable, or even required.
 It allows for authorities to be able to have insight into how identities are used. Specifically in the AML case already mentioned, identities tied to transactions must remain transparent to the regulator. This usually comes in direct conflict with \emph{User agency} goals and requires compromises in either technological or legal form. Auer et al. published a taxonomy of privacy and oversight measures \cite{ABCD25}, in particular, we want to note their use of different "hardness" categories for enforcement techniques: \emph{soft/hard privacy} and \emph{soft/hard oversight}.

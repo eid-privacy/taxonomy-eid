@@ -43,14 +43,14 @@ damage to the holder.
 have the biggest resources available from all threat actors.
 From the technical resources, some of these actors can be considered to have a \emph{global network view}
 \cite{TorAttack}, which can break anonymity guarantees based on partial network view only.
-Another technical resource is the \emph{store now decrypt later}, which allows such an adversary
+Another technical resource is the \emph{store now, decrypt later} approach, which allows such an adversary
 to store large amounts of traffic data, in the hope to decrypt it once large generic quantum computers
 are available.
 
 A nation state also has soft power, which can be used to \emph{coerce} a company into giving
 access to its data or operating system \cite{TelegramArrest}\cite{ProtonLogging}.
 While \emph{data access} is the most common request done by governments, there have been attempts
-to ask a company to modify its operating system to access a device (cite St Bernardino case
+to ask a company to modify its operating system to access a device (cite San Bernardino case
 \cite{AppleSanBernardino}.
 We suppose that such a change could not stay hidden for a very long time, and will have major
 repercussions into the trust assumptions given to the companies involved.
@@ -58,10 +58,10 @@ repercussions into the trust assumptions given to the companies involved.
 A last element is the \emph{modification of law}, to allow retrieval of data which has been
 kept hidden from the government beforehand.
 In the best case, the changes of law only change the future handling of data (cite
-"Vorratsdatenspeicherung"), but sometimes a government will also try to access
+''Vorratsdatenspeicherung''), but sometimes a government will also try to access
 data which had guarantees of privacy in the past.
 
-The fact that a nation state can itself be an issuer is dealt with in \ref{p:internal-threats}.
+The fact that a nation state can itself be an issuer is dealt with in section \ref{p:internal-threats}.
 
 \paragraph{Hacking Groups} are technically and financially capable groups using stolen data as a mean to a financial end.
 We model them as having less power and capabilities than nation states --- although some might be backed by one.
@@ -117,7 +117,7 @@ not \emph{re-issue} a credential to a third party and to ensure they are deliver
 more clearly than for legal role abuses.
 The likely most frequent misbehavior is \emph{credential sharing}, where a holder lends their credential to another holder.
 
-\paragraph{Legal Role Abuse} must be watched carefully, as described in \ref{subp:nation_state}.
+\paragraph{Legal Role Abuse} must be watched carefully, as described in paragraph \ref{subp:nation_state}.
 Multiple \eid systems in the northern countries rely on the law to protect participants'
 data, which is stored with private actors \cite{BankID25}.
 These protections are vulnerable to slow regulatory drift, significant \emph{changes of law}, or legal battles and delays.
@@ -230,8 +230,8 @@ complexities.
 
 There have also been reports of \emph{backdoored algorithms} \cite{DualEC},
 where a nation state proposed an algorithm which has been weakened on purpose.
-Most of the modern algorithms now avoid \emph{hand-optimized values}, and use
-randomly chosen values, or other \emph{nothing-up-my-sleeve number}\cite{Salsa20}.
+Most modern algorithms now avoid \emph{hand-optimized values}, and use
+randomly chosen values, or other \emph{nothing-up-my-sleeve numbers}\cite{Salsa20}.
 
 A final point, which is close to \emph{implementation failures}, is the addition
 of \emph{simple} solutions to complex problems.
