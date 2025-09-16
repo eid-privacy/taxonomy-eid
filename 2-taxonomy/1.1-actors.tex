@@ -1,12 +1,12 @@
 \subsubsection{Actors}
 \label{subsub:actors}
 
-In \emph{\rot}, \emph{Actors} describes the parties interacting through the identity system from two different angles: their \emph{legal status} and their \emph{role} in an interaction.
+In \emph{\rot}, \emph{Actors} describe the parties interacting through the identity system from two different angles: their \emph{legal status} and their \emph{role} in an interaction.
 Depending on the type of an actor and their functional role, the privacy requirements and threat models differ.
 The legal entities are based on the definition in most of the legal systems: private individuals, businesses, and governments.
 We elected to use the functional roles that are commonly used in the current EU and CH proposals: Verifier, holder, and issuer.
 Note that roles are tied to interactions, not entities. 
-A single entity can assume different roles between transactions or even in a single one. e.g., verifying a credential in order to issue a new one.
+A single entity can assume different roles between transactions, e.g., verifying a credential in order to issue a new one.
 
 %\todo{LG: is it OK if this is very Swiss-related? I suppose that most of it is the same in the EU and elsewhere... }
 %\todo{Okay I thought this was related to the previous paragraph. It is true the definitions are very Swiss oriented. I changed some to make them broader. I think we should eventually evolve that so the definitions can be applied elsewhere}
@@ -59,7 +59,7 @@ However, if an issuer is not in these registries, the holder will get a notifica
 \subparagraph{Holder} has an application which stores the \eid and other credentials on an electronic device, most often a smartphone with an Android or an iOS system.
 In \swiyu, the holder has full control over their \eid and credentials, and can control at any time which information is presented to whom.
 
-\subparagraph{Verifier} is the role of the entity wanting to receive a proof of one or more fields of a credential from a holder.
+\subparagraph{Verifier} is the role of the entity wanting to receive a proof of one or more attributes of a credential from a holder.
 The verifier has the legal obligation to ensure only the minimal amount of information necessary for the fulfillment of the task gets requested to the holder.
 The Swiss ordinance allows non-registered verifiers to request data, but the holders will be informed that this action is dangerous and not normal \cite[Art. 14]{VEID25}.
 For registered verifiers, the Swiss ordinance also contains information about abuse of verification requests.

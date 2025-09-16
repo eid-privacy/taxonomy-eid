@@ -7,7 +7,7 @@ This section lists \emph{existing} cryptographic building blocks, schemes, and p
 .1 Cryptographic Foundations. 
 .2 Primitives. 
 .3 Hashes. 
-.3 Public Key Cryptography. 
+.3 Public-key Cryptography. 
 .3 Symmetric Cryptography. 
 .2 Cryptographic Services.
 .3 Signing. 
@@ -27,7 +27,8 @@ They providing the basic computational building blocks for secure communication 
 The size of the hash value is always the same, regardless of the size of the message.
 A \emph{cryptographic hash function} needs to have the following properties:
 the output must be \emph{equiprobable} for any input, finding the input of a random output is only possible through enumeration, \emph{pre-image resistance}, given an input/output pair, only enumeration can give a second input with the same output, \emph{second pre-image resistance}, randomly finding two inputs with the same output is only possible with enumeration, \emph{collision resistance}.
-Aside from SHA-256 \cite{FIPS180-4} and SHA-3 \cite{FIPS202}, we want to mention Poseidon \cite{GKRRS21}, a purpose-specific hash function designed to be cost-effective when used in zk-SNARKS constructions.
+The most popular hash functions are SHA-256 \cite{FIPS180-4} and SHA-3 \cite{FIPS202}.
+We also want to mention Poseidon \cite{GKRRS21}, a purpose-specific hash function designed to be cost-effective when used in zk-SNARKS constructions.
 
 \subparagraph{Public-Key Cryptography} 
 \label{sp:public-key-cryptography}
@@ -36,8 +37,7 @@ One-way functions are easy to compute in one direction, and hard in the other.
 This allows a party to encrypt a message using the other party's public key. 
 Message that can then only be decrypted by someone in possession of the corresponding private key.
 
-\subparagraph{Symmetric Cryptography} Symmetric cryptography relies on parties agreeing on a common secret to protect information. 
-Symmetric systems are computationally very efficient and cryptographic systems usually rely on a combination of asymmetric and symmetric cryptographic primitives.
+\subparagraph{Symmetric Cryptography} Symmetric cryptography relies on parties agreeing on a common secret to protect information. This secret is used for both encrypting and decrypting messages. Symmetric systems are computationally very efficient and cryptographic systems usually rely on a combination of asymmetric and symmetric cryptographic primitives.
 
 \paragraph{Cryptographic services} 
 \label{pa:cryptographic-services}
@@ -70,7 +70,7 @@ In particular, we discuss the following:
 \end{itemize}
 
 \subparagraph{Selective Disclosure} By selective disclosure we mean any mechanism that allows holders of signed information to reveal only specific portions of it while preserving the verifier's ability to validate the integrity and provenance of shared data. This can be achieved through characteristics of the signature scheme (CL, BBS+ \cite{ASM06}) or through the construction of the credential itself (IETF SD-JWT VC \cite{SDJWT}, ISO mDoc/mDL \cite{ISO18013-5_2021}).
-The latter do not embed the claims in the credentials, but use salted hashes signed by the issuer so that individual pieces of information revealed by the holders can be linked back to the signed credential by verifiers.
+The latter do not embed the claims in the credentials, but use \emph{salted hashes} signed by the issuer so that individual pieces of information revealed by the holders can be linked back to the signed credential by verifiers.
 
 \subparagraph{Private Information Retrieval} Most credential systems in production today use simple status lists to indicate the revocation or suspension status of issued credentials (IETF Token Status List \cite{TSL}, W3C Bitstring Status List \cite{W3C-status-lists}), In the context of proving one's credentials non-revocation, we discuss Private Information Retrieval schemes such as \cite{MW22} that could allow provers to fetch information concerning their credentials revocation status without revealing any information to issuers. In Swiyu \cite{Swiyu} it might also be a way to access the Trust Registries without revealing information to the entity operating the infrastructure.
 
