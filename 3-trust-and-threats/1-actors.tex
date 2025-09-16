@@ -29,17 +29,17 @@ A single entity can assume different roles between transactions, e.g., verifying
 For Switzerland, these are defined in the \eid Act \cite{BGEID24} and the accompanying ordinance \cite{VEID25}.
 Other acts related to digital security will also apply.
 
-\subparagraph{Private Individuals}
+\paragraph{Private Individuals}
 are the most common entities using \eid to prove one or more attributes related to their identity.
 The Swiss proposal currently only defines a digital identity for individuals.
 This makes them \emph{holders} by default. We can envision individuals acting in other \emph{functional roles} even though the technical means to do so may not be available.
 
-\subparagraph{Businesses}
+\paragraph{Businesses}
 must have a Unique Enterprise Identification Number (UID) to appear as such and be represented officially in the Swiss e-ID system.
 In the scope of the Swiss proposal, they are \emph{verifiers}.
 It is a natural extension, however, to assume they will eventually act as \emph{holders} and \emph{issuers} too.
 
-\subparagraph{Government}
+\paragraph{Government}
 is the responsible for the system and runs the necessary infrastructure for it, with the exception of the online identity verification using video.
 They also run the \emph{registry portal} which allows anybody to sign up and to create entries in the \emph{base registry} for their public keys, as well as entries in the \emph{trust registry}.
 The entries in the \emph{trust registry} are verified by the government, and include the full name, address, and reasons to be a verifier or an issuer.
@@ -51,15 +51,15 @@ The EUID \cite{EUDI-ARF} defines the same functional roles, as it is based upon 
 
 %\todo{Add a figure here with the functional roles}
 
-\subparagraph{Issuer} creates credentials and distributes them to the \emph{holder}s.
+\paragraph{Issuer} creates credentials and distributes them to the \emph{holder}s.
 A holder usually starts out with receiving an \eid as their first credential, which can only be issued by the government.
 In \swiyu, every issuer can sign up to the base- and trust-registries, but this is not mandatory.
 However, if an issuer is not in these registries, the holder will get a notification that they are about to store a credential from a non-official issuer.
 
-\subparagraph{Holder} has an application which stores the \eid and other credentials on an electronic device, most often a smartphone with an Android or an iOS system.
+\paragraph{Holder} has an application which stores the \eid and other credentials on an electronic device, most often a smartphone with an Android or an iOS system.
 In \swiyu, the holder has full control over their \eid and credentials, and can control at any time which information is presented to whom.
 
-\subparagraph{Verifier} is the role of the entity wanting to receive a proof of one or more attributes of a credential from a holder.
+\paragraph{Verifier} is the role of the entity wanting to receive a proof of one or more attributes of a credential from a holder.
 The verifier has the legal obligation to ensure only the minimal amount of information necessary for the fulfillment of the task gets requested to the holder.
 The Swiss ordinance allows non-registered verifiers to request data, but the holders will be informed that this action is dangerous and not normal \cite[Art. 14]{VEID25}.
 For registered verifiers, the Swiss ordinance also contains information about abuse of verification requests.

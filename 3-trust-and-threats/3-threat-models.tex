@@ -37,7 +37,7 @@ While a \emph{holder} will not want to share their secrets with a \emph{verifier
 once an external adversary gets hold of these secrets, they will use it even if it adds
 damage to the holder.
 
-\subparagraph{Nation States}
+\paragraph{Nation States}
 \label{subp:nation_state}
 
 We consider threats from \emph{Nation State}s as the most difficult to advert, as they have
@@ -64,7 +64,7 @@ data which had guarantees of privacy in the past.
 
 The fact that a nation state can itself be an issuer is dealt with in \ref{p:internal-threats}.
 
-\subparagraph{Hacking Groups}
+\paragraph{Hacking Groups}
 
 We frame hacking groups as technically and financially capable groups using stolen data as a mean to a financial end.
 We model them as having less power and capabilities than nation states --- although some might be backed by one.
@@ -85,7 +85,7 @@ Victims have to pay without guarantees that they will receive the key or that gr
 Sometimes both methods are combined, and the victim is extorted more than once, which is called \emph{double extortion}
 and even has a game-theoretical equilibrium \cite{Meurs24}.
 
-\subparagraph{Theft / Device Loss / Coercion}
+\paragraph{Theft / Device Loss / Coercion}
 
 We model \emph{theft}, or \emph{loss of a holder's device}, as a threat.
 In cases where the device of a legitimate user of the system falls into malicious hands, it must be secured enough to avoid misuse or abuse the victim's identity.
@@ -99,7 +99,7 @@ credential for a purpose that is unlawful or otherwise harmful to the legitimate
 What can happen if one or more of the official \emph{actors} in the \eid system
 misbehave and do not follow the protocol or the legal framework?
 
-\subparagraph{Functional Role Abuse}
+\paragraph{Functional Role Abuse}
 
 Depending on the functional role, different attacks are possible. 
 
@@ -125,7 +125,7 @@ not \emph{re-issue} a credential to a third party and to ensure they are deliver
 more clearly than for legal role abuses.
 The likely most frequent misbehavior is \emph{credential sharing}, where a holder lends their credential to another holder.
 
-\subparagraph{Legal Role Abuse}
+\paragraph{Legal Role Abuse}
 
 As described in \ref{subp:nation_state}, any protections on legal aspects should be watched carefully.
 Multiple \eid systems in the northern countries rely on the law to protect participants'
@@ -146,7 +146,7 @@ are not defined, be it on purpose, or through negligence.
 This can allow governments, or private companies, to collect and abuse
 more data than a privacy preserving system should allow.
 
-\subparagraph{Collusion between Actors}
+\paragraph{Collusion between Actors}
 
 This is a different threat model where actors are not misbehaving in isolation but collaborating together.
 
@@ -191,7 +191,7 @@ And, in effect, factorization of big numbers is hard, unless there is a big enou
 So the above holds up until the point somebody figures out a an efficient way to factorize large numbers or until the apparition of powerful enough \emph{quantum computers}.
 Or if somebody finds a better algorithm to factorize large numbers. 
 
-\subparagraph{Quantum Computers}
+\paragraph{Quantum Computers}
 
 Before talking about the effect of quantum computers on cryptographic assumptions, let's make a small detour to understand how we model an important piece of asymmetric cryptography: \emph{one-way functions}, as described in
 \ref{sp:public-key-cryptography}.
@@ -213,7 +213,7 @@ signatures \ref{sp:signing}.
 So once a quantum computer capable of breaking the used cryptographic algorithms is
 available, all signatures, past and future, must be considered invalid.
 
-\subparagraph{Cryptographic Soundness}
+\paragraph{Cryptographic Soundness}
 
 There is a saying in cryptographic circles: \emph{don't roll your own crypto} \cite{SchneierLaw11}.
 This is the wisdom gained by many cryptographic protocols which have not been
@@ -255,7 +255,7 @@ attacker.
 Unless a solution has been peer-reviewed by established cryptographers, it should
 be considered to fall under the ''Don't roll your own crypto'' \cite{SchneierLaw11} caveat.
 
-\subparagraph{Implementation Failures}
+\paragraph{Implementation Failures}
 
 Once all the algorithms are written down, they have to be implemented in code.
 One of the most common implementation failure leading to security issues is missing
