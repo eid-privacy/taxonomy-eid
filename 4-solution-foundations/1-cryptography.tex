@@ -20,7 +20,7 @@ This section lists \emph{existing} cryptographic building blocks, schemes, and p
 .2 Post-Quantum Security. 
 }
 
-\paragraph{Primitives} Cryptographic primitives form the foundational mathematical operations upon which all higher-level security protocols are built.
+\subsubsection{Primitives} Cryptographic primitives form the foundational mathematical operations upon which all higher-level security protocols are built.
 They providing the basic computational building blocks for secure communication and data protection.
 
 \subparagraph{Hashes} They are used to create a digital fingerprint, the \emph{hash value}, of a source, the \emph{message}.
@@ -39,7 +39,7 @@ Message that can then only be decrypted by someone in possession of the correspo
 
 \subparagraph{Symmetric Cryptography} Symmetric cryptography relies on parties agreeing on a common secret to protect information. This secret is used for both encrypting and decrypting messages. Symmetric systems are computationally very efficient and cryptographic systems usually rely on a combination of asymmetric and symmetric cryptographic primitives.
 
-\paragraph{Cryptographic services} 
+\subsubsection{Cryptographic services} 
 \label{pa:cryptographic-services}
 We describe here the elementary services required for a secure and private \eid. \emph{Encrypting} encompasses symmetric and asymmetric schemes designed to preserve the confidentiality of data during transmission or storage. The distributed, many-actors nature of distributed identity systems makes them well-suited for public-key architectures, which enable secure \emph{key exchanges} between parties without prior shared secret, as well as the publication of verification material for \emph{signatures}.
 
@@ -55,7 +55,7 @@ As mentioned previously, symmetric cryptography is efficient but in a lot of sce
 \label{sp:encrypting}
 Encryption schemes is broadly split between symmetric (AES \cite{NIST2001AES}, ChaCha20-Poly1305 \cite{RFC7539}) and asymmetric (RSA \cite{RSA78}, ElGamal \cite{E85}) systems. It is also quite common to build hybrid systems in which public-key cryptography is used to encrypt a symmetric key which is then used to encrypt communication and benefit from the speed-advantage of symmetric schemes.
 
-\paragraph{Privacy-first techniques.} Under this section we file techniques that can alleviate the tension between privacy (\emph{User agency}) and authorities oversight by providing techniques enabling strong security while limiting the amount of data shared in the process.
+\subsubsection{Privacy-first techniques.} Under this section we file techniques that can alleviate the tension between privacy (\emph{User agency}) and authorities oversight by providing techniques enabling strong security while limiting the amount of data shared in the process.
 
 \subparagraph{Zero-Knowledge Proofs} Zero-Knowledge proofs are getting an unprecedented amount of attention with their blockchain applications. 
 Despite a very different setup, they are also being studied and developed for digital identity applications.
@@ -74,5 +74,5 @@ The latter do not embed the claims in the credentials, but use \emph{salted hash
 
 \subparagraph{Private Information Retrieval} Most credential systems in production today use simple status lists to indicate the revocation or suspension status of issued credentials (IETF Token Status List \cite{TSL}, W3C Bitstring Status List \cite{W3C-status-lists}), In the context of proving one's credentials non-revocation, we discuss Private Information Retrieval schemes such as \cite{MW22} that could allow provers to fetch information concerning their credentials revocation status without revealing any information to issuers. In Swiyu \cite{Swiyu} it might also be a way to access the Trust Registries without revealing information to the entity operating the infrastructure.
 
-\paragraph{Post-quantum security} As we already mentioned, the question of post-quantum security of the whole digital identity system is of notable importance to our discussion.
+\subsubsection{Post-quantum security} As we already mentioned, the question of post-quantum security of the whole digital identity system is of notable importance to our discussion.
 It is particularly relevant in the fact that many of the techniques that are convenient to build anonymous credentials (such as BBS+ signatures \cite{ASM06}), are not quantum-resistant and usually not part of existing hardware security modules' feature set. If regulation requires \emph{non-transferability} to use hardware binding, any non-hardware-supported scheme might require years for proper standardization and industry roll-out --- years during which the need for quantum-resistance might become more pressing, or simply necessary.

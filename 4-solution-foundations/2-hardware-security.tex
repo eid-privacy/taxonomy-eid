@@ -13,7 +13,7 @@ The immutable nature of these hardware security features creates long-term depen
 .2 Hardware Security Module. 
 }
 
-\paragraph{Secure Element} We are primarily concerned with the secure element of mobile devices, since it is the most likely solution to achieve holder binding on consumer phones.
+\subsubsection{Secure Element} We are primarily concerned with the secure element of mobile devices, since it is the most likely solution to achieve holder binding on consumer phones.
 
 \subparagraph{Apple Secure Enclave}
 
@@ -28,5 +28,5 @@ For our purpose, these environments are sensibly similar to Apple's, offering en
 
 \subparagraph{Key attestations} Key attestations are useful in proving to third parties that a key has been well-generated and is actually hardware-bound. Sometimes they also prove that the device they were generated on is not jailbroken. There is a major difference here between Apple and Google's implementation of key attestations. Apple's attestations require Apple itself to verify the key information, whereas Google's can be verified by third parties. This could have an impact on the use of secure elements and key attestation in the scope of public institutions' \eid projects.
 
-\paragraph{Hardware Security Module} Hardware security modules are physically separate hardware appliances. They are designed for efficient key storage, and cryptographic operations (in particular, signatures). They are also designed to be tamper-resistant and provide physical security. This kind of hardware is usually mandated for actors allowed to issue and sign certificates in a public-key infrastructure, or in banks. The same kind of requirements are enforced for actors allowed to issue high level of assurance attestations in the EU ARF \cite{EUDI-ARF}, such as the \emph{Personal Identification Data (PID)}.
+\subsubsection{Hardware Security Module} Hardware security modules are physically separate hardware appliances. They are designed for efficient key storage, and cryptographic operations (in particular, signatures). They are also designed to be tamper-resistant and provide physical security. This kind of hardware is usually mandated for actors allowed to issue and sign certificates in a public-key infrastructure, or in banks. The same kind of requirements are enforced for actors allowed to issue high level of assurance attestations in the EU ARF \cite{EUDI-ARF}, such as the \emph{Personal Identification Data (PID)}.
 
