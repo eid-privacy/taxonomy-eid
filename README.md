@@ -17,6 +17,15 @@ To create the pdf.
 
 Please clone the repository, change the .tex files, then create a PR to our repository.
 
+## Release
+
+To release a new document version, simply add a tag starting with a `v` and push it:
+
+```bash
+git tag v0.1
+git push origin v0.1
+```
+
 # License
 
 This document is licensed under [CC-BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
