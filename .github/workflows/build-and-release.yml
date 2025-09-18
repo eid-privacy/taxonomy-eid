@@ -33,7 +33,7 @@ jobs:
         draft: false
         prerelease: false
         body: |
-          Automated release of the SoK e-ID paper PDF.
+          Automated release of the Taxonomy e-ID paper PDF.
           
           Triggered by git tag: ${{ github.ref_name }}
           
@@ -44,5 +44,6 @@ jobs:
       with:
         upload_url: ${{ steps.create_release.outputs.upload_url }}
         asset_path: ./main.pdf
+        # If you change this, also update the blog post at https://eid-privacy.github.io/wp1/2025/09/17/taxonomy-of-digital-identity-systems.html
         asset_name: taxonomy-eid-paper.pdf
         asset_content_type: application/pdf
