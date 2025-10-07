@@ -1,7 +1,9 @@
-# Systematization of Knowledge for e-ID
+# Taxonomy for e-ID
 
-This is the first part of our SoK on e-ID.
-The second part will include the evaluation metrics, and apply them on the EU and CH e-ID systems.
+This paper gives an overview of the taxonomy used in the Swiss and EU e-IDs.
+
+We're planning to add evaluation metrics and then apply them on the EU and CH e-ID systems.
+Then it will be a Systematization of Knowledge paper.
 
 ## LaTeX it
 
