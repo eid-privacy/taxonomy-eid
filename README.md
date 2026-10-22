@@ -1,5 +1,10 @@
 # Taxonomy for e-ID
 
+> [!NOTE]
+> This report has moved to [eid-privacy/zkp-reports](https://github.com/eid-privacy/zkp-reports/tree/main/taxonomy-eid),
+> where all reports of the project are collected and built.
+> This repository is kept for its history and will be archived.
+
 This paper gives an overview of the taxonomy used in the Swiss and EU e-IDs.
 
 We're planning to add evaluation metrics and then apply them on the EU and CH e-ID systems.
